@@ -23,4 +23,3 @@ hole=0.3  # Design moderne
 L'affichage
 figure_ventes.show()
 figure_ca.show()
-

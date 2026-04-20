@@ -28,7 +28,6 @@ figure_ca = px.pie(df,
                    title="Répartition du Chiffre d'Affaires par produit",
                    hole=0.3)  # Mode "Donut"
 
-
 figure_region = px.bar(df,
                        x='region',
                        y='ca_region',
@@ -47,7 +46,7 @@ print('analyses_ventes.html généré avec succès !')
 
 
 
-# AFFICHAGE DE TOUS LES GRAPHIQUES
+# affichage
 figure_ventes.show()
 figure_ca.show()
 figure_region.show()
