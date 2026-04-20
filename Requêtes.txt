@@ -22,4 +22,4 @@ Les ventes par région
 SELECT c5 AS region, SUM(c3 * c4) AS CA_par_region
 FROM ventes
 WHERE c5 != 'region'
-GROUP BY c5;
+GROUP BY c5
