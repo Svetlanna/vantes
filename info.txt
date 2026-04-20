@@ -1,0 +1,34 @@
+ Importation Pandas et Plotly
+lire le fichier CSV
+skiprows=1 pour ignorer la ligne des titres et pd.to_numeric
+Création de DataFrame
+netoyage & calculs
+transformation  les colonnes en nombres pour pouvoir faire des graphiques
+
+
+
+px.bar : un graphique  verticales
+graphique 1 :ventes par produit ,graphique en barres pour les quantités
+graphique 2 : chiffre d'affaires
+graphique 3 quantité par région
+
+
+ fichier html
+le mode 'w' VIDE le fichier au début
+le mode 'a' ajoute les autres graphiques sans effacer le début
+
+x='produit' : orizontal. on met le nom des produits.
+
+y='quantite_vendue' : vertical , on met le nombre de ventes.
+
+color='produit' :une couleur différente à chaque produit pour que ce soit plus joli
+
+6 Création graphique(rond) Chiffre d'Affaires
+px.pie : On crée un graphique en secteurs
+values='chiffre_affaires' : La taille des parts dépend de l'argent gagné
+hole=0.3  # Design moderne
+
+
+L'affichage
+figure_ventes.show()
+figure_ca.show()
