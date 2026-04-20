@@ -1,0 +1,25 @@
+Le chiffre d'affaires total
+
+SELECT SUM(c3 * c4) AS CA_Total
+FROM ventes
+WHERE c3 != 'prix';
+
+
+Les ventes par produit
+SELECT c2 AS produit, SUM(c4) AS quantite_totale
+FROM ventes
+WHERE c2 != 'produit'
+GROUP BY c2;
+
+
+Les ventes par région
+
+1 SUM(c3 * c4) : le prix par la quantité pour chaque ligne, puis on additionne le tout
+2 WHERE c5 != 'region' :pour ignorer la toute première ligne de fichier CSV qui contient le mot "region"
+(sinon SQL essaiera de multiplier du texte,resoultat serait erreur)
+3 GROUP BY c5 : Demande à SQL de créer un groupe pour chaque région unique (Nord, Sud ...) afin d'avoir un total par zone.
+
+SELECT c5 AS region, SUM(c3 * c4) AS CA_par_region
+FROM ventes
+WHERE c5 != 'region'
+GROUP BY c5;
