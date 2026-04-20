@@ -13,10 +13,12 @@ y='quantite_vendue' : vertical , on met le nombre de ventes.
 
 color='produit' :une couleur différente à chaque produit pour que ce soit plus joli
 
-6 Création deuxième graphique (rond)
+6 Création graphique(rond) Chiffre d'Affaires
 px.pie : On crée un graphique en secteurs
 values='chiffre_affaires' : La taille des parts dépend de l'argent gagné
 hole=0.3  # Design moderne
+
+7 Création de graphique Ventes par Région
 
 L'affichage
 figure_ventes.show()
